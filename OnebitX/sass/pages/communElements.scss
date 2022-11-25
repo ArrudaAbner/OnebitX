@@ -1,0 +1,99 @@
+* {
+  color: white;
+}
+
+.header {
+  font-size: 12px;
+  font-weight: bold;
+
+  #navItem {
+    &:hover {
+      color: $link-hover;
+    }
+  }
+}
+
+.textShadow {
+  text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+.container00 {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+.arrowDown {
+  display: inline-block;
+  margin-top: 5px;
+  width: 90px;
+}
+
+.logoPc {
+  margin-left: -10px;
+  margin-right: 40px;
+  width: 240px;
+}
+
+#button {
+  padding: $padding-button;
+  border: 2px solid white;
+}
+
+.footer {
+  background-color: black;
+  height: 15vh;
+  font-size: 12px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  a {
+    text-decoration: none;
+    color: white;
+
+    &:hover {
+      color: $link-hover;
+    }
+  }
+}
+
+.copyOBC {
+  color: $copy-color;
+}
+
+.downloadDesc {
+  background-color: black;
+  height: 85vh;
+  padding-top: 240px;
+}
+
+//media query
+
+@media (max-width: 449px) {
+  .downloadDesc {
+    button {
+      margin: 10px 0;
+    }
+  }
+}
+
+@media (max-width: 405px) {
+  .logoPc {
+    margin-top: 15px;
+    width: 180px;
+  }
+
+  .footer {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 350px) {
+  .logoPc {
+    margin-top: 15px;
+    width: 150px;
+  }
+}
